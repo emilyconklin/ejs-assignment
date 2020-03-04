@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/aea8d94d43.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Kaje helped me figure out this solution to having the link active on the current page -->
+  <nav>
+    <ul>
+      <li <% if (name === 'Home') { %>class="current" <% } %> ><a href="/">Home</a></li>
+      <li <% if (name === 'Why') { %>class="current" <% } %> ><a href="/why">Why!?</a></li>
+      <li <% if (name === 'Lies') { %>class="current" <% } %> ><a href="/lies">Lies</a></li>
+      <li <% if (name === 'Facts') { %>class="current" <% } %> ><a href="/facts">Nutty Facts</a></li>
+    </ul>
+  </nav>
+
+  
